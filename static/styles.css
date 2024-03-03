@@ -1,0 +1,80 @@
+/* Estilo de fondo */
+body {
+  background: url('https://media.giphy.com/media/3o7TKzswgdEWhJZB4c/giphy.gif') fixed;
+  background-size: cover;
+  font-family: "Impact", "Courier New", monospace;
+  color: #ff00ff;
+  animation: flicker 0.1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+/* Estilo de encabezado */
+h1 {
+  text-align: center;
+  font-size: 10em;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px #000000;
+  transform: skewX(-20deg) rotate(15deg);
+  animation: neonGlow 1s infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% { text-shadow: 5px 5px 10px #000000; }
+  100% { text-shadow: 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff, 0 0 100px #ff00ff, 0 0 150px #ff00ff; }
+}
+
+/* Estilo de párrafos */
+p {
+  line-height: 2;
+  padding: 50px;
+  border: 10px double #ffff00;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 50px #ff00ff;
+  transform: rotate(10deg) skewY(10deg);
+  animation: float 3s infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: rotate(10deg) skewY(10deg); }
+  100% { transform: rotate(-10deg) skewX(10deg); }
+}
+
+/* Estilo de lista */
+ul {
+  list-style-type: none;
+}
+
+/* Estilo de elementos de lista */
+li {
+  padding: 30px;
+  border: 10px outset #00ffff;
+  margin: 30px;
+  background-color: #ffa07a;
+  transform: rotate(-10deg) skewX(10deg);
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(-10deg) skewX(10deg); }
+  100% { transform: rotate(10deg) skewY(10deg); }
+}
+
+/* Estilo de enlace */
+a {
+  color: #ff1493;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* Estilo de enlace al pasar el mouse */
+a:hover {
+  color: #4b0082;
+  font-size: 4em;
+  transform: scale(2) rotate(20deg);
+}
